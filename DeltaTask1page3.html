@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DeltaTask1page3.css">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFuypir5KWcsTJl0cEoq_yYr9HGNGG-P8OQ&usqp=CAU">
+    <title>Delta task page 3</title>
+</head>
+<body onload="printLeaderboard()">
+    
+    <div id="heading"><h1>Leader Board</h1></div>
+    <div class="mainflex">
+    <table id="leaderboard">
+        
+    </table>
+    <button id="gohome">Homepage</button>
+</div>
+
+    <script>
+        document.getElementById("gohome").addEventListener("click",function(){
+            location.href="DeltaTask1page1.html";
+        })
+        function printLeaderboard() {
+        var d =[];
+        let p;
+        let i;
+        let temp;
+        for (i=0; i<localStorage.length ; i++){
+            p=localStorage.key(i);
+            if(!(p.includes("winshowmanytimes")||p.includes("loseshowmanytimes"))){
+                d.push(p);
+            }
+
+        }
+        for(i=0; i<d.length-1; i++){
+            for(j=0; j<d.length-i-1; j++){
+                if(Number(localStorage.getItem(d[j]))<Number(localStorage.getItem(d[j+1]))){
+                    temp = d[j];
+                    d[j] = d[j+1];
+                    d[j+1] = temp;
+                }
+            }
+        }
+        
+            let text = "<tr><th>Rank</th><th>Name</th><th>High score</th><th>Wins</th><th>Loses</th></tr>";
+            for(let i = 0; i<d.length; i++){
+                text += "<tr><td>"+(i+1)+"</td><td>"+d[i]+"</td><td>"+localStorage.getItem(d[i])+"</td><td>"+localStorage.getItem(d[i]+"winshowmanytimes")+"</td><td>"+localStorage.getItem(d[i]+"loseshowmanytimes")+"</td></tr>";
+            }
+            document.getElementById("leaderboard").innerHTML = text;
+            
+        }
+        
+    </script>
+</body>
+</html>

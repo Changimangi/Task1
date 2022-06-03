@@ -1,0 +1,36 @@
+html{
+    background-image:linear-gradient(to right, rgb(94, 28, 28), rgb(69, 22, 83), rgb(36, 32, 104));
+    color:white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#heading{
+    text-align: center;
+}
+.mainflex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th,td{
+    font-size: 3vh;
+    text-align: center;
+    padding: 2vh;
+    border-bottom:0.1vh solid white;
+    width:15vw;
+}
+#gohome{
+    margin-top:20px;
+    height:6vh;
+    width:15vh;
+    background-color: aquamarine;
+    border:0.2vh solid white;
+    border-radius: 0.5vh;
+    
+}
+@media only screen and (max-width:600px){
+    th,td{
+        padding:0px;
+    }
+}

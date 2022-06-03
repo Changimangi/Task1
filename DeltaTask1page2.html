@@ -1,0 +1,375 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DeltaTask1page2.css">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFuypir5KWcsTJl0cEoq_yYr9HGNGG-P8OQ&usqp=CAU">
+    <title>Delta Induction task - 1</title>
+</head>
+<body onload=" display()">
+    <div class="heading"><h1>Swift & Steady......</h1></div>
+    <p id="encouragement"></p>
+    <br><br>
+    <div class="mainflex">
+    
+    <div id="sequencedetails" >
+        <div class="div1"><h1 class = "timer">0</h1></div>
+        <div class="div2"><p></p>
+            <form id="newform"></form>
+            <button  id="submittingsequence">Play!!</button></div>
+    </div>
+    
+    <div class="grid">
+        <div class="tile1" onclick="pushing(1)" onmousedown="animtilemousedown(1)" onmouseup="animtilemouseup(1)"></div>
+        <div class="tile2" onclick="pushing(2)" onmousedown="animtilemousedown(2)" onmouseup="animtilemouseup(2)" ></div>
+        <div class="tile3" onclick="pushing(3)" onmousedown="animtilemousedown(3)" onmouseup="animtilemouseup(3)" ></div>
+        <div class="tile4" onclick="pushing(4)" onmousedown="animtilemousedown(4)" onmouseup="animtilemouseup(4)" ></div>
+        <div class="tile5" onclick="pushing(5)" onmousedown="animtilemousedown(5)" onmouseup="animtilemouseup(5)" ></div>
+        <div class="tile6" onclick="pushing(6)" onmousedown="animtilemousedown(6)" onmouseup="animtilemouseup(6)" ></div>
+        <div class="tile7" onclick="pushing(7)" onmousedown="animtilemousedown(7)" onmouseup="animtilemouseup(7)" ></div>
+        <div class="tile8" onclick="pushing(8)" onmousedown="animtilemousedown(8)" onmouseup="animtilemouseup(8)" ></div>
+        <div class="tile9" onclick="pushing(9)" onmousedown="animtilemousedown(9)" onmouseup="animtilemouseup(9)" ></div>
+        <div class="tile10" onclick="pushing(10)" onmousedown="animtilemousedown(10)" onmouseup="animtilemouseup(10)" ></div>
+        <div class="tile11" onclick="pushing(11)" onmousedown="animtilemousedown(11)" onmouseup="animtilemouseup(11)" ></div>
+        <div class="tile12" onclick="pushing(12)" onmousedown="animtilemousedown(12)" onmouseup="animtilemouseup(12)" ></div>
+        <div class="tile13" onclick="pushing(13)" onmousedown="animtilemousedown(13)" onmouseup="animtilemouseup(13)" ></div>
+        <div class="tile14" onclick="pushing(14)" onmousedown="animtilemousedown(14)" onmouseup="animtilemouseup(14)" ></div>
+        <div class="tile15" onclick="pushing(15)" onmousedown="animtilemousedown(15)" onmouseup="animtilemouseup(15)" ></div>
+        <div class="tile16" onclick="pushing(16)" onmousedown="animtilemousedown(16)" onmouseup="animtilemouseup(16)" ></div>
+        <div class="tile17" onclick="pushing(17)" onmousedown="animtilemousedown(17)" onmouseup="animtilemouseup(17)" ></div>
+        <div class="tile18" onclick="pushing(18)" onmousedown="animtilemousedown(18)" onmouseup="animtilemouseup(18)" ></div>
+        <div class="tile19" onclick="pushing(19)" onmousedown="animtilemousedown(19)" onmouseup="animtilemouseup(19)"></div>
+        <div class="tile20" onclick="pushing(20)" onmousedown="animtilemousedown(20)" onmouseup="animtilemouseup(20)"></div>
+        <div class="tile21" onclick="pushing(21)" onmousedown="animtilemousedown(21)" onmouseup="animtilemouseup(21)"></div>
+        <div class="tile22" onclick="pushing(22)" onmousedown="animtilemousedown(22)" onmouseup="animtilemouseup(22)"></div>
+        <div class="tile23" onclick="pushing(23)" onmousedown="animtilemousedown(23)" onmouseup="animtilemouseup(23)"></div>
+        <div class="tile24" onclick="pushing(24)" onmousedown="animtilemousedown(24)" onmouseup="animtilemouseup(24)"></div>
+        <div class="tile25" onclick="pushing(25)" onmousedown="animtilemousedown(25)" onmouseup="animtilemouseup(25)"></div>
+        <div class="tile26" onclick="pushing(26)" onmousedown="animtilemousedown(26)" onmouseup="animtilemouseup(26)"></div>
+        <div class="tile27" onclick="pushing(27)" onmousedown="animtilemousedown(27)" onmouseup="animtilemouseup(27)"></div>
+        <div class="tile28" onclick="pushing(28)" onmousedown="animtilemousedown(28)" onmouseup="animtilemouseup(28)"></div>
+        <div class="tile29" onclick="pushing(29)" onmousedown="animtilemousedown(29)" onmouseup="animtilemouseup(29)"></div>
+        <div class="tile30" onclick="pushing(30)" onmousedown="animtilemousedown(30)" onmouseup="animtilemouseup(30)"></div>
+        <div class="tile31" onclick="pushing(31)" onmousedown="animtilemousedown(31)" onmouseup="animtilemouseup(31)"></div>
+        <div class="tile32" onclick="pushing(32)" onmousedown="animtilemousedown(32)" onmouseup="animtilemouseup(32)"></div>
+        <div class="tile33" onclick="pushing(33)" onmousedown="animtilemousedown(33)" onmouseup="animtilemouseup(33)"></div>
+        <div class="tile34" onclick="pushing(34)" onmousedown="animtilemousedown(34)" onmouseup="animtilemouseup(34)"></div>
+        <div class="tile35" onclick="pushing(35)" onmousedown="animtilemousedown(35)" onmouseup="animtilemouseup(35)"></div>
+        <div class="tile36" onclick="pushing(36)" onmousedown="animtilemousedown(36)" onmouseup="animtilemouseup(36)"></div>
+    </div>
+    <div class="endbox">
+        <p class="result"></p>
+        <p class="score"></p>
+    </div>
+    <div class="flexbox">
+        <button id="tostart" >Home page</button>
+        <button id="toleaderboard">Leader board</button>
+        
+    </div>
+</div>
+    
+
+
+
+
+    <script>
+        var formele = document.getElementById("newform");
+        let inp = document.createElement("input");
+        inp.setAttribute("type","password");
+        inp.setAttribute("class","sequence");
+        inp.setAttribute("maxlength","2");
+        formele.appendChild(inp);
+        var clicks = [];
+        var l = [];
+        var counter = 1;
+        var win = true
+        var totalscores=0;
+        var scoreforeach = 1000;
+        var locstring = location.href;
+        
+        console.log(locstring);
+        var sequence=[];
+        var playername1 = gettingplayername1(locstring);
+        var playername2 = gettingplayername2(locstring);
+        console.log(playername1,playername2);
+        var nwins = (localStorage.getItem(playername2+"winshowmanytimes")!=null)?Number(localStorage.getItem(playername2+"winshowmanytimes")):0;
+        var nloses = (localStorage.getItem(playername2+"loseshowmanytimes")!=null)?Number(localStorage.getItem(playername2+"loseshowmanytimes")):0;
+        console.log(locstring);
+        var noofclicks;
+        function display(){
+            document.getElementsByTagName("p")[1].innerHTML = playername1+", enter the sequence:";
+        }
+        document.getElementById("submittingsequence").addEventListener("click",function(e){
+            e.preventDefault;
+            for(let i=0; i<counter; i++){
+                sequence.push(document.getElementsByClassName("sequence")[i].value);
+            }
+            document.getElementById("encouragement").innerHTML = "Common "+playername2+", click fast";
+            console.log(l);
+            game();
+        })
+        const tileclickaudio = new Audio();
+        tileclickaudio.src = "tileclick.mp3";
+        const gameoveraudio = new Audio();
+        gameoveraudio.src = "gameoversound.mp3";
+        const gamewonaudio = new Audio();
+        gamewonaudio.src = "gamewonsound.mp3";
+        
+        const clickslist = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36];
+        
+        document.getElementById("tostart").addEventListener("click",function(){
+            location.href = "DeltaTask1page1.html";
+        })
+        document.getElementById("toleaderboard").addEventListener("click",function(){
+            location.href = "DeltaTask1page3.html";
+        })
+        
+        async function game(){
+            if(win = true){
+            l = [];
+            clicks = [];
+            let i;
+            let ans;
+            let val; let y;
+            
+            scoretiming();
+
+            for(let  k of sequence){
+                if(k>36){
+                    alert("The number should be less that 36. Please begin from first.");
+                    document.location.reload(true);
+                }
+                l.push(k);
+            }
+            console.log(l);
+            let promise1 = new Promise(function(resolve,reject){
+                setTimeout(resolve(blinkingtiles(l)),1)
+            });
+            y= await promise1;
+            console.log(y);
+            scoretiming();
+            timing();
+            let promise2 = new Promise(function(resolve,reject){
+                setTimeout(function(){resolve("allok")},11000)
+            });
+            ans = await promise2;
+            console.log(ans);
+            console.log(clicks);
+                
+                
+                if(ans=="allok" && clicks.length==l.length){
+                    
+                    if(validatingtileclicks(l,clicks)){
+                        win = true;
+                        l.splice(0,counter);
+                        clicks.splice(0,counter);
+                        sequence.splice(0,counter);
+                        for(let i=0; i<counter; i++){
+                            document.getElementsByClassName("sequence")[i].value = null;
+                        }
+                        counter++;
+                        let inp = document.createElement("input");
+                        inp.setAttribute("type","password");
+                        inp.setAttribute("class","sequence");
+                        inp.setAttribute("maxlength","2");
+                        formele.appendChild(inp);
+                        totalscores=totalscores+scoreforeach;
+                        if(counter%6==0){
+                            let y=document.createElement("br");
+                            formele.appendChild(y);
+                        }
+
+
+                    }
+                    else{
+                        win = false;
+                        scoreforeach=0;
+                    }
+
+                }
+                else{
+                    
+                    win = false;
+                    scoreforeach=0;
+                }
+                
+                
+                
+                
+                console.log("totalscore="+totalscores);
+                
+            }
+            
+            if(win == false){
+                nloses+=1;
+                localStorage.setItem(playername2+"winshowmanytimes",nwins);
+                localStorage.setItem(playername2+"loseshowmanytimes",nloses);
+                if(totalscores>localStorage.getItem(playername2)){
+                    localStorage.setItem(playername2,totalscores);
+                }
+                exit("You lost")
+            }
+            else if(counter==36){
+                nloses+=1;
+                localStorage.setItem(playername2+"winshowmanytimes",nwins);
+                localStorage.setItem(playername2+"loseshowmanytimes",nloses);
+                if(totalscores>localStorage.getItem(playername2)){
+                    localStorage.setItem(playername2,totalscores);
+                }
+                nwins+=1;
+                exit("You win")
+            }
+            
+            
+        }
+        
+        function pushing(t){
+            clicks.push(t);
+            console.log(t);
+            tileclickaudio.play();
+            
+        }
+        function gettingplayername2(s){
+            let l1 = [];
+            let string = " ";
+            let i=((s.length)-1)
+            for( ; s.charAt(i)!="="; i--){
+                l1.push(s.charAt(i));
+            }
+            for(let i=l1.length - 1; i>=0 ; i--){
+                string+=l1[i];
+            }
+            return string;
+
+        }
+        function gettingplayername1(s){
+            let index;
+            let i;
+            for(i=0; i<s.length; i++){
+                if(s.charAt(i)=="&"){
+                    index = i;
+                }
+            }
+            let actual = s.slice(0,index);
+            return gettingplayername2(actual);
+        }
+        async function blinkingtiles(seq){
+            let s; let ip ;
+            for(let k of seq){
+                s="tile"+k;
+                elem = document.getElementsByClassName(s)[0];
+                elem.style.backgroundColor="yellow";
+                elem.style.border = "1px solid yellow";
+                elem.style.opacity="0.5";
+                let promise3 = new Promise(function(resolve,reject){
+                    setTimeout(function(){
+                        elem.style.backgroundColor="aqua";
+                        elem.style.border = "1px solid aqua";
+                        elem.style.opacity="0.5";
+                        resolve("fine");
+                    },500);
+                });
+                
+                ip = await promise3;
+            }
+            return "ok";
+        }
+        
+        function timing(){
+            
+            let g = 10; 
+            let y = document.getElementsByClassName("timer")[0];
+            
+            
+            setInterval(frame,1000);
+            function frame(){
+                if(g<0 ){
+                    clearInterval(frame);
+                    
+                }
+                else{
+                    y.innerHTML = g;
+                    g--;
+                }
+                
+            }
+            
+        }
+        function scoretiming(){
+            scoreforeach =1000 ;
+            setInterval(frame,1000);
+            function frame(){
+                let l = "tile"+clicks[counter-1];
+                if(l!="tileundefined"){
+                    
+                    clearInterval(frame);
+                }
+                else{
+                    scoreforeach--;
+                    
+                }
+            }
+        }
+        
+        function validatingtileclicks(seq,list){
+            u=0;
+            for(let k of list){
+                if(seq[u]==k){
+                    u++;
+                }
+                else{
+                    return false;
+                }
+            }
+            return true;
+        }
+        function exit(text){
+            
+            animeresult(text,"result");
+            animeresult("Your score : "+totalscores,"score");
+            if(text=="You lost"){
+                gameoveraudio.play();
+            }
+            else{
+                gamewonaudio.play();
+            }
+        }
+        function animtilemousedown(t){
+            let z = "tile"+t;
+            document.getElementsByClassName(z)[0].style.transform = "translateY(4px)";
+            document.getElementsByClassName(z)[0].style.boxShadow = "0 5px black";
+        }
+        function animtilemouseup(t){
+            let z = "tile"+t;
+            document.getElementsByClassName(z)[0].style.transform = "translateY(-1px)";
+            document.getElementsByClassName(z)[0].style.boxShadow = "0 9px black";
+        }
+        function animeresult(text,classname){
+            let e = document.getElementsByClassName(classname)[0];
+            size=0;
+            document.getElementById("encouragement").innerHTML = "Oops..."
+            document.getElementById("sequencedetails").style.display="none";
+            document.getElementsByClassName("flexbox")[0].style.display = "flex";
+            setInterval(increment,1);
+            function increment(){
+                if(size==50){
+                    clearInterval(increment);
+                }
+                else{
+                    e.innerHTML = text;
+                    e.style.fontSize = size+"px";
+                    size++;
+                }
+            }
+
+        }
+        
+        
+        
+
+
+    </script>
+    
+</body>
+</html>

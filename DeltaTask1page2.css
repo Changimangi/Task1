@@ -1,0 +1,149 @@
+html{
+    background-image:linear-gradient(to right, rgb(94, 28, 28), rgb(69, 22, 83), rgb(36, 32, 104));
+    color:white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 4vmin;
+
+}
+.heading{
+    display:block;
+    color:aliceblue;
+    background-image: linear-gradient(to right,rgb(15, 64, 121),rgb(122, 14, 113),rgb(112, 7, 59));
+    
+    border:1px ;
+    padding: 10px;
+    width:100%;
+    text-align: center;
+   
+    
+}
+#encouragement{
+    margin-top:10px;
+}
+
+.mainflex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mainflex>div{
+    width:100%;
+}
+.grid{
+    
+    display: grid;
+    grid-template-columns: 5vw 5vw 5vw 5vw 5vw 5vw;
+    row-gap: 9px;
+    column-gap: 9px;
+    justify-content: center;
+    
+    
+}
+.grid div{
+    border:1px solid aqua;
+    height:10vh;
+    border-radius:10px;
+    background-color: aqua;
+    opacity:0.5;
+    box-shadow:0 9px black;
+}
+.grid div:hover{
+    background-color: rgb(17, 236, 163);
+}
+.timer{
+    
+    text-align: center;
+    border:3px solid brown;
+    width:10vw;
+    padding:1vh;
+    text-decoration: underline;
+}
+.endbox{
+    
+    
+    width:100%;
+    text-align: center;
+    
+    
+    
+}
+
+.flexbox{
+    
+    display:none;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.flexbox button{
+    margin:2vh;
+    height:6vh;
+    width:8vw;
+    background:aquamarine;
+    border:0.2vh solid white;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+    
+}
+#sequencedetails{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width:850px){
+    .heading{
+        padding: 0px;
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2px;
+        align-items: center;
+        width:100%
+        
+    }
+    .flexbox button{
+        display: block;
+        width:100%;
+    }
+    #sequencedetails{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+    }
+    
+}
+
+.newform{
+    margin-left:4vh;
+}
+.div2 p{
+    border:0.2vh;
+   margin-left: 2vh;
+    font-size: 4vmin;
+}
+.div2 .sequence{
+    text-align: center;
+    font-size: 5vh;
+    width:2.5vw;
+    height:5vh;
+    margin:1vh;
+    
+}
+.div2 #submittingsequence{
+    width:10vw;
+    height:5vh;
+    background-color: rgb(0, 255, 98);
+    margin-left: 17vh;
+    font-size: 3vmin;
+    
+}
+.mainflex>div{
+    margin-top:30px;
+}
+

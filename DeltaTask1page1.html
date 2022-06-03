@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DeltaTask1page1.css">
+    <link rel="Stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFuypir5KWcsTJl0cEoq_yYr9HGNGG-P8OQ&usqp=CAU">
+    <title>Delta induction task1 page1</title>
+</head>
+<body >
+    <div class="menu">
+        <i class="material-icons">menu</i>
+        <div class="dropdown">
+        <ul onclick="location.href='DeltaTask1page3.html'">Leaderboard</ul>
+    </div>
+    </div>
+    <h1>Welcome!!</h1>
+    <h3>Enter your name:</h3>
+    
+    <br><br><br>
+    <form  id="form1" >
+    <div class="ele1">
+        <label for="name1">Player 1</label><br>
+        <input type="text" id="playername1" name="name1"><br>
+    </div>
+    <div class="ele2">
+        <label for="name2">Player 2</label><br>
+        <input type="text" id="playername2" name="name2"><br>
+    </div>
+    </form>
+    <div class="icon"><div class="starticon"><div class="triangle"></div></div></div>
+
+    <script>
+       
+        var username;
+        
+        
+        console.log(username);
+        document.getElementsByClassName("triangle")[0].addEventListener("click",function(e){
+            e.preventDefault();
+            player1 = document.getElementById("playername1").value;
+            player2 = document.getElementById("playername2").value;
+            newpage = "DeltaTask1page2.html?player1="+player1+"&"+"player2="+player2;
+            location.href = newpage;
+        })
+        
+        
+    </script>
+</body>
+</html>
